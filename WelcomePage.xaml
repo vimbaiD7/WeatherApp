@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.WelcomePage"
+             Title="WelcomePage"
+             BackgroundColor="LightBlue">
+            <StackLayout VerticalOptions = "Center"
+                                 Margin="20"
+                                 Spacing ="0">
+            <Image Source ="icon.png"
+                                 HeightRequest="200"
+                                 WidthRequest="200"/>
+            <Label Text = "OpenWeather"
+                                 FontSize ="40"
+                                 TextColor="Yellow"/>
+            <Label Text = "Application"
+                                 FontSize ="40"
+                                 TextColor="WhiteSmoke"/>
+            <Label Text = "Welcome to the weather application"
+	                             FontSize ="Small"
+                                 TextColor="WhiteSmoke"/>
+            <Button x:Name="CheckWeatherBtn"
+                                  Text="Check The Weather"
+                                  FontSize="Large"
+                                  BackgroundColor="yellow"
+                                  WidthRequest="250"
+                                  Margin="0,50,0,0"
+                                  Clicked="CheckWeatherBtn_Clicked"/>
+
+            </StackLayout>
+</ContentPage>
